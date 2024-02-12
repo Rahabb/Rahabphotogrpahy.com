@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Portfolio - Services</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="services.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <div class="service">
+                <h2>Photography Services</h2>
+                <p>High-quality photography for various occasions.</p>
+                <ul>
+                    <li>Event Photography</li>
+                    <li>Portrait Photography</li>
+                    <li>Product Photography</li>
+                </ul>
+                <p>Starting at $99 per hour</p>
+                <button class="book-now">Book Now</button>
+                <form class="booking-form" method="post" action="https://formspree.io/f/xaygkkko">
+                    <label for="name-photography">Your Name:</label>
+                    <input type="text" id="name-photography" name="name-photography" required>
+
+                    <label for="email-photography">Your Email:</label>
+                    <input type="email" id="email-photography" name="email-photography" required>
+
+                    <label for="phone-photography">Phone Number:</label>
+                    <input type="tel" id="phone-photography" name="phone-photography" required>
+
+                    <label for="date-photography">Date:</label>
+                    <input type="date" id="date-photography" name="date-photography" required>
+
+                    <label for="message-photography">Additional Details:</label>
+                    <textarea id="message-photography" name="message-photography" rows="4"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="service">
+                <h2>Drone Photography</h2>
+                <p>Capturing stunning aerial shots.</p>
+                <ul>
+                    <li>Aerial Event Coverage</li>
+                    <li>Real Estate Aerials</li>
+                    <li>Landscape Aerial Photography</li>
+                </ul>
+                <p>Starting at $199 per hour</p>
+                <button class="book-now">Book Now</button>
+                <form class="booking-form" method="post" action="https://formspree.io/f/xaygkkko">
+                    <label for="name-drone">Your Name:</label>
+                    <input type="text" id="name-drone" name="name-drone" required>
+
+                    <label for="email-drone">Your Email:</label>
+                    <input type="email" id="email-drone" name="email-drone" required>
+
+                    <label for="phone-drone">Phone Number:</label>
+                    <input type="tel" id="phone-drone" name="phone-drone" required>
+
+                    <label for="date-drone">Date:</label>
+                    <input type="date" id="date-drone" name="date-drone" required>
+
+                    <label for="message-drone">Additional Details:</label>
+                    <textarea id="message-drone" name="message-drone" rows="4"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <!-- Add separate blocks for other services -->
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="services.js"></script>
+</body>
+</html>

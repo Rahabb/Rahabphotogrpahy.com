@@ -1,0 +1,43 @@
+/* Scrollable container for photos */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Unique styles for each photo */
+.unique-photo-1 {
+    background-color: #ffc107;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.unique-photo-2 {
+    background-color: #2196F3;
+    border: 2px solid #1976D2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Add unique styles for the other photos (unique-photo-3, unique-photo-4, etc.) */
+
+/* Style the download links */
+.photo a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #333;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.photo a:hover {
+    background-color: #444;
+}
