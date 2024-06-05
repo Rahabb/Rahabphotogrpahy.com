@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - Rahab Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Rahab Photogrpahy Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="book">
+        <h2>Book a Session</h2>
+        <form
+            action="https://formspree.io/f/xaygkkko"
+            method="POST"
+        >
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required>
+        
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required>
+        
+            <input type="hidden" name="package" id="package">
+        
+            <label for="date">Preferred Date:</label>
+            <input type="date" name="date" id="date" required>
+        
+            <p>Selected Package: <span id="selected-package"></span></p>
+        
+            <button type="submit">Send</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="packages.html">Packages</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100093189557248" target="_blank">
+                <img src="facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/rahab_photography?igsh=MTR3cTAzM25hYzRyaA%3D%3D&utm_source=qr" target="_blank">
+                <img src="instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@rahab_photography?_t=8mw8F73Rk0M&_r=1" target="_blank">
+                <img src="tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://www.youtube.com/@rahabphotography" target="_blank">
+                <img src="youtube.svg" alt="YouTube">
+            </a>
+            <!-- Social media icons -->
+        </div>
+        <p>© 2024 Rahab Photography. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to update the hidden package input field
+        function updatePackage(packageName) {
+            document.getElementById('package').value = packageName;
+            document.getElementById('selected-package').textContent = packageName;
+        }
+    
+        // Function to handle package selection
+        function selectPackage(packageName) {
+            updatePackage(packageName);
+            alert(`You have selected the ${packageName} package.`);
+        }
+    
+        // Function to get the package name from URL parameter
+        function getPackageNameFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedPackage = urlParams.get('package');
+            if (selectedPackage) {
+                updatePackage(selectedPackage);
+            }
+        }
+    
+        // Call the function to get the package name from URL when the page loads
+        window.onload = function() {
+            getPackageNameFromURL();
+        };
+    </script>
+    
+</body>
+</html>

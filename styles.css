@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    background: url('') no-repeat center center/cover;
+    height: 250px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+#hero h1 {
+    margin-top: 1px;
+    font-size: 2.5em;
+}
+
+#hero .btn {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#about, #services, #featured-work, #cta {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px 0;
+}
+
+#about h2, #services h2, #featured-work h2, #cta h2 {
+    margin-bottom: 20px;
+}
+
+#featured-work .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#featured-work .gallery img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+#cta .btn {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+footer {
+    background: #b3b3b3;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-media {
+    margin: 10px 0;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+#packages {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#packages .package {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#packages .package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#packages .package h3 {
+    margin-top: 0;
+    color: #ff5a5f;
+}
+
+#packages .package ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#packages .package ul li {
+    text-align: left;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#packages .package ul li .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#packages .package .btn {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#packages .addons {
+    margin-top: 40px;
+}
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-info, #map {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#book {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px 0;
+}
+
+#book form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#book form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#book form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#book form button {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px; /* Set a fixed width for the logo */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+.logo img {
+    width: 100px; /* Set a specific width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Style for the header */
+header {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 10px 0; /* Add padding as needed */
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 200px; /* Set a maximum width for the logo */
+    width: 100%; /* Make sure the logo takes up the full width of its container */
+}
+
+.logo img {
+    width: 100%; /* Make sure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
